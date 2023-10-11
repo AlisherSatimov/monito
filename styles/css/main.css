@@ -271,7 +271,7 @@ body {
   line-height: 16px;
 }
 
-.body12-medium {
+.body12-medium, #one-more-friend__banner p {
   color: #667479;
   /* Body/12px Medium */
   font-size: 12px;
@@ -280,7 +280,7 @@ body {
   line-height: 18px;
 }
 
-.body12-bold, #our-pets .body12-medium span {
+.body12-bold, #our-pets .body12-medium span, #our-pets #one-more-friend__banner p span, #one-more-friend__banner #our-pets p span {
   color: #667479;
   /* Body/12px Medium */
   font-size: 12px;
@@ -1017,6 +1017,9 @@ body {
 #our-pets {
   margin-top: 60px;
 }
+#our-pets .bottom-btn {
+  display: none;
+}
 #our-pets .our-pets__title {
   display: flex;
   justify-content: space-between;
@@ -1054,7 +1057,7 @@ body {
 #our-pets .body16-bold, #our-pets .primary-btn, #our-pets .explore-btn, #our-pets #header-hero .nav-links li, #header-hero .nav-links #our-pets li {
   color: #00171f;
 }
-#our-pets .body12-medium {
+#our-pets .body12-medium, #our-pets #one-more-friend__banner p, #one-more-friend__banner #our-pets p {
   display: flex;
   gap: 6px;
 }
@@ -1067,11 +1070,20 @@ body {
   }
 }
 @media only screen and (max-width: 754px) {
+  #our-pets {
+    margin-top: 40px;
+  }
+  #our-pets .bottom-btn {
+    margin-top: 16px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+  }
   #our-pets .section-title {
     font-size: 20px;
     line-height: 32px;
   }
-  #our-pets .view-btn {
+  #our-pets .top-btn {
     display: none;
   }
   #our-pets .body16-medium, #our-pets .intro-btn, #our-pets .subscribe-btn, #our-pets .hero p, .hero #our-pets p {
@@ -1099,15 +1111,15 @@ body {
     font-weight: 700;
     line-height: 20px;
   }
-  #our-pets .body12-medium {
+  #our-pets .body12-medium, #our-pets #one-more-friend__banner p, #one-more-friend__banner #our-pets p {
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
   }
-  #our-pets .body12-medium span:nth-child(1) {
+  #our-pets .body12-medium span:nth-child(1), #our-pets #one-more-friend__banner p span:nth-child(1), #one-more-friend__banner #our-pets p span:nth-child(1) {
     width: 70%;
   }
-  #our-pets .body12-medium span:nth-child(2) {
+  #our-pets .body12-medium span:nth-child(2), #our-pets #one-more-friend__banner p span:nth-child(2), #one-more-friend__banner #our-pets p span:nth-child(2) {
     display: none;
   }
 }
@@ -1128,5 +1140,189 @@ body {
   #our-pets .pets-card:nth-child(7),
   #our-pets .pets-card:nth-child(8) {
     display: none;
+  }
+}
+#one-more-friend__banner .site__banner {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  height: 378px;
+  background-color: #003459;
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  padding-right: 70px;
+}
+#one-more-friend__banner .banner-title {
+  position: relative;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+#one-more-friend__banner .banner-btns {
+  position: relative;
+  z-index: 200;
+  display: flex;
+  gap: 20px;
+}
+#one-more-friend__banner h2 {
+  color: #003459;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 68px;
+  text-transform: capitalize;
+}
+#one-more-friend__banner h3 {
+  color: #003459;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  text-transform: capitalize;
+}
+#one-more-friend__banner p {
+  width: 394px;
+  margin: 8px 0 24px;
+}
+#one-more-friend__banner .right-effect {
+  width: 782.292px;
+  height: 635px;
+  transform: rotate(25.23deg);
+  border-radius: 99px;
+  background: #fceed5;
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+}
+#one-more-friend__banner .left-effect {
+  width: 787.54px;
+  height: 787.54px;
+  transform: rotate(28.251deg);
+  border-radius: 99px;
+  background: #002a48;
+  position: absolute;
+  left: -15%;
+  top: 55%;
+}
+#one-more-friend__banner .explore-img {
+  width: 513px;
+  position: absolute;
+  z-index: 250;
+  bottom: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  #one-more-friend__banner .container {
+    width: 578px;
+  }
+  #one-more-friend__banner .site__banner {
+    justify-content: start;
+    align-items: center;
+    padding-right: 0;
+    height: 640px;
+    padding-top: 50px;
+  }
+  #one-more-friend__banner .banner-title {
+    width: 100%;
+    align-items: center;
+  }
+  #one-more-friend__banner p {
+    text-align: center;
+  }
+  #one-more-friend__banner .right-effect {
+    width: 605.027px;
+    height: 635px;
+    transform: rotate(11.41deg);
+    border-radius: 75px;
+    right: 10%;
+    bottom: 42%;
+  }
+  #one-more-friend__banner .left-effect {
+    left: -30%;
+    top: 80%;
+  }
+  #one-more-friend__banner .explore-img {
+    width: 500px;
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 754px) {
+  #one-more-friend__banner .container {
+    width: 414px;
+  }
+  #one-more-friend__banner .site__banner {
+    margin-top: 40px;
+    justify-content: start;
+    align-items: center;
+    padding-right: 0;
+    height: 640px;
+    padding-top: 50px;
+  }
+  #one-more-friend__banner .banner-btns {
+    gap: 16px;
+  }
+  #one-more-friend__banner h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 54px;
+  }
+  #one-more-friend__banner h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  #one-more-friend__banner .right-effect {
+    right: -15%;
+    bottom: 52%;
+  }
+  #one-more-friend__banner .left-effect {
+    left: -45%;
+    top: 80%;
+  }
+  #one-more-friend__banner .explore-img {
+    max-width: 500px;
+    width: 500px;
+    left: -7%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  #one-more-friend__banner .container {
+    width: 280px;
+    padding: 25px 5px;
+  }
+  #one-more-friend__banner p {
+    width: 100%;
+  }
+  #one-more-friend__banner .banner-btns {
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+  }
+  #one-more-friend__banner h2 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 44px;
+  }
+  #one-more-friend__banner h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  #one-more-friend__banner .right-effect {
+    right: -20%;
+    bottom: 50%;
+  }
+  #one-more-friend__banner .explore-img {
+    max-width: 400px;
+    width: 400px;
+    left: -15%;
   }
 }/*# sourceMappingURL=main.css.map */

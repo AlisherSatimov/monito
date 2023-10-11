@@ -1,6 +1,10 @@
 #our-pets {
     margin-top: 60px;
 
+    .bottom-btn {
+        display: none;
+    }
+
     .our-pets__title {
         display: flex;
         justify-content: space-between;
@@ -66,12 +70,21 @@
 
 @media only screen and (max-width: 754px) {
     #our-pets {
+        margin-top: 40px;
+
+        .bottom-btn {
+            margin-top: 16px;
+            display: inline-flex;
+            width: 100%;
+            justify-content: center;
+        }
+
         .section-title {
             font-size: 20px;
             line-height: 32px;
         }
 
-        .view-btn {
+        .top-btn {
             display: none;
         }
 
