@@ -1,0 +1,74 @@
+.primary-btn {
+    @extend .body16-bold;
+    color: $neutral-color-00;
+
+    display: inline-flex;
+    height: 44px;
+    padding: 14px 28px 10px 28px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 57px;
+    background: $primary-color-dark-blue;
+}
+
+.explore-btn {
+    @extend .body16-bold;
+    color: $neutral-color-00;
+
+    display: inline-flex;
+    padding: 14px 28px 10px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 57px;
+    background: $primary-color-dark-blue;
+}
+
+.intro-btn {
+    @extend .body16-medium;
+    color: $primary-color-dark-blue;
+
+    display: inline-flex;
+    padding: 14px 28px 10px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 57px;
+    border: 1.5px solid $primary-color-dark-blue;
+    gap: 8px;
+
+    &::after {
+        font-family: "Font Awesome 6 Free";
+        content: "\f144";
+    }
+}
+
+.view-btn {
+    @extend .body14-medium;
+    color: $primary-color-dark-blue;
+
+    display: inline-flex;
+    padding: 12px 28px 12px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 57px;
+    border: 1.5px solid $primary-color-dark-blue;
+    gap: 8px;
+
+    &::after {
+        font-family: "Font Awesome 6 Free";
+        content: "\f105";
+        font-weight: 900;
+    }
+}
+
+.subscribe-btn {
+    @extend .body16-medium;
+    color: $neutral-color-00;
+
+    display: inline-flex;
+    padding: 14px 28px 10px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: $primary-color-dark-blue;
+}
