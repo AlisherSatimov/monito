@@ -271,7 +271,7 @@ body {
   line-height: 16px;
 }
 
-.body12-medium, #one-more-friend__banner p {
+.body12-medium, #adoption p, #one-more-friend__banner p {
   color: #667479;
   /* Body/12px Medium */
   font-size: 12px;
@@ -280,7 +280,7 @@ body {
   line-height: 18px;
 }
 
-.body12-bold, #our-products .body12-medium span, #our-products #one-more-friend__banner p span, #one-more-friend__banner #our-products p span, #our-pets .body12-medium span, #our-pets #one-more-friend__banner p span, #one-more-friend__banner #our-pets p span {
+.body12-bold, #our-products .body12-medium span, #our-products #adoption p span, #adoption #our-products p span, #our-products #one-more-friend__banner p span, #one-more-friend__banner #our-products p span, #our-pets .body12-medium span, #our-pets #adoption p span, #adoption #our-pets p span, #our-pets #one-more-friend__banner p span, #one-more-friend__banner #our-pets p span {
   color: #667479;
   /* Body/12px Medium */
   font-size: 12px;
@@ -1057,7 +1057,7 @@ body {
 #our-pets .body16-bold, #our-pets .primary-btn, #our-pets .explore-btn, #our-pets #header-hero .nav-links li, #header-hero .nav-links #our-pets li {
   color: #00171f;
 }
-#our-pets .body12-medium, #our-pets #one-more-friend__banner p, #one-more-friend__banner #our-pets p {
+#our-pets .body12-medium, #our-pets #adoption p, #adoption #our-pets p, #our-pets #one-more-friend__banner p, #one-more-friend__banner #our-pets p {
   display: flex;
   gap: 6px;
 }
@@ -1111,15 +1111,15 @@ body {
     font-weight: 700;
     line-height: 20px;
   }
-  #our-pets .body12-medium, #our-pets #one-more-friend__banner p, #one-more-friend__banner #our-pets p {
+  #our-pets .body12-medium, #our-pets #adoption p, #adoption #our-pets p, #our-pets #one-more-friend__banner p, #one-more-friend__banner #our-pets p {
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
   }
-  #our-pets .body12-medium span:nth-child(1), #our-pets #one-more-friend__banner p span:nth-child(1), #one-more-friend__banner #our-pets p span:nth-child(1) {
+  #our-pets .body12-medium span:nth-child(1), #our-pets #adoption p span:nth-child(1), #adoption #our-pets p span:nth-child(1), #our-pets #one-more-friend__banner p span:nth-child(1), #one-more-friend__banner #our-pets p span:nth-child(1) {
     width: 70%;
   }
-  #our-pets .body12-medium span:nth-child(2), #our-pets #one-more-friend__banner p span:nth-child(2), #one-more-friend__banner #our-pets p span:nth-child(2) {
+  #our-pets .body12-medium span:nth-child(2), #our-pets #adoption p span:nth-child(2), #adoption #our-pets p span:nth-child(2), #our-pets #one-more-friend__banner p span:nth-child(2), #one-more-friend__banner #our-pets p span:nth-child(2) {
     display: none;
   }
 }
@@ -1363,7 +1363,7 @@ body {
 #our-products .body16-bold, #our-products .primary-btn, #our-products .explore-btn, #our-products #header-hero .nav-links li, #header-hero .nav-links #our-products li {
   color: #00171f;
 }
-#our-products .body12-medium, #our-products #one-more-friend__banner p, #one-more-friend__banner #our-products p {
+#our-products .body12-medium, #our-products #adoption p, #adoption #our-products p, #our-products #one-more-friend__banner p, #one-more-friend__banner #our-products p {
   display: flex;
   gap: 6px;
 }
@@ -1432,6 +1432,84 @@ body {
 
 @media only screen and (max-width: 1200px) {
   #partrners {
+    display: none;
+  }
+}
+#adoption .site-adoption {
+  width: 100%;
+  height: 378px;
+  border-radius: 20px;
+  background: #ffb775;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  position: relative;
+  overflow: hidden;
+}
+#adoption .site-adoption__title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 200;
+}
+#adoption h2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #003459;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 68px;
+  text-transform: capitalize;
+}
+#adoption h3 {
+  color: #003459;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  text-transform: capitalize;
+}
+#adoption p {
+  color: #242b33;
+  margin: 8px 0 42px;
+}
+#adoption .adoption-btns {
+  display: flex;
+  gap: 20px;
+}
+#adoption .adoption-effect-one {
+  width: 782.292px;
+  height: 635px;
+  transform: rotate(-25.23deg);
+  border-radius: 99px;
+  background: #fceed5;
+  position: absolute;
+  left: -15%;
+  bottom: 0;
+}
+#adoption .adoption-effect-two {
+  width: 787.54px;
+  height: 787.54px;
+  transform: rotate(-28.251deg);
+  border-radius: 99px;
+  opacity: 0.3;
+  background: linear-gradient(103deg, #fceed5 6.43%, #fceed5 78.33%, #ffe7ba 104.24%);
+  position: absolute;
+  top: 40%;
+  right: -20%;
+}
+#adoption .adoption-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 1200px) {
+  #adoption {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
