@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(/src/fonts/Gilroy-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(/src/fonts/Gilroy-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(/src/fonts/Gilroy-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(/src/fonts/Gilroy-Bold.ttf);
+    font-weight: 700;
+}
+
+.body10-bold {
+    color: $neutral-color-00;
+
+    /* Body/10px Bold */
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.body12-medium {
+    color: $neutral-color-60;
+
+    /* Body/12px Medium */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.body12-bold {
+    color: $neutral-color-60;
+
+    /* Body/12px Medium */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.body14-regular {
+    color: $neutral-color-80;
+
+    /* Body/14px Regular */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.body14-medium {
+    color: $neutral-color-40;
+
+    /* Body/14px Medium */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.body14-bold {
+    color: $neutral-color-100;
+
+    /* Body/14px Bold */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.body16-medium {
+    color: $neutral-color-80;
+
+    /* Body/16px Medium */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.body16-bold {
+    color: $primary-color-dark-blue;
+
+    /* Body/16px Bold */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.section-title {
+    color: $primary-color-dark-blue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: capitalize;
+}

@@ -1,0 +1,36 @@
+// COLORS
+$light: #fff;
+$dark: #000;
+
+$linear: linear-gradient(
+    103deg,
+    #fceed5 6.43%,
+    #fceed5 78.33%,
+    #ffe7ba 104.24%
+);
+
+$primary-color-dark-blue: #003459;
+$primary-color-dark-blue-40: lighten(#003459, 22.75);
+$primary-color-dark-blue-60: lighten(#003459, 10);
+$primary-color-dark-blue-80: darken(#003459, 3.33);
+
+$secondary-color-mon-yellow: #f7dba7;
+$secondary-color-mon-yellow-40: lighten(
+    saturate(adjust-hue(#f7dba7, -1), 3.33),
+    10
+);
+$secondary-color-mon-yellow-60: darken(desaturate(#f7dba7, 6.1), 5.29);
+$secondary-color-mon-yellow-80: darken(desaturate(#f7dba7, 6.62), 9.8);
+
+$neutral-color-00: #fdfdfd;
+$neutral-color-10: darken(saturate(adjust-hue(#fdfdfd, 195), 11.11), 6.27);
+$neutral-color-20: darken(saturate(adjust-hue(#fdfdfd, 190), 6.25), 18.04);
+$neutral-color-40: darken(saturate(adjust-hue(#fdfdfd, 195), 6.25), 36.86);
+$neutral-color-60: darken(saturate(adjust-hue(#fdfdfd, 196), 8.52), 55.49);
+$neutral-color-80: darken(saturate(adjust-hue(#fdfdfd, 212), 17.24), 82.16);
+$neutral-color-100: darken(saturate(adjust-hue(#fdfdfd, 195), 100), 93.14);
+
+$state-color-pink-red: #ff564f;
+$state-color-green-light: #34c759;
+$state-color-orange-shine: #ff912c;
+$state-color-blue-sea: #00a7e7;
