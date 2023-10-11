@@ -14,12 +14,86 @@
         <title>Monito</title>
     </head>
     <body>
+        <!-- MENU START -->
+        <div class="menu">
+            <input type="checkbox" class="menu-checkbox" id="menu" hidden />
+
+            <div class="menu-wrapper">
+                <label for="menu">
+                    <i class="fa-solid fa-x fa-2xl"></i>
+                </label>
+                <ul>
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Category</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="menu-search">
+                    <input
+                        type="search"
+                        class="search-input"
+                        placeholder="Search something here!"
+                    />
+                    <img src="src/icons/search-icon.svg" alt="" />
+                </div>
+
+                <a href="#" class="primary-btn">Join the community</a>
+            </div>
+        </div>
+        <!-- MENU END -->
+
         <!-- HEADER - HERO START -->
 
         <div id="header-hero">
             <!-- NAVBAR START -->
 
-            <nav class="navbar container"></nav>
+            <nav class="navbar nav-container">
+                <div class="nav-links">
+                    <label for="menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <img src="src/icons/logo.png" alt="monito logo" />
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <ul>
+                        <li>Home</li>
+                        <li>Category</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="nav__search-box">
+                    <input
+                        type="search"
+                        class="search-input"
+                        placeholder="Search something here!"
+                    />
+                    <img src="src/icons/search-icon.svg" alt="" />
+
+                    <a href="#" class="primary-btn">Join the community</a>
+                </div>
+
+                <div class="lang-dropdown">
+                    <input id="lang" type="checkbox" />
+                    <label for="lang" class="animate">
+                        Eng<i class="fa-solid fa-angle-down"></i>
+                    </label>
+                    <ul class="animate">
+                        <li>UZ</li>
+                        <li>EN</li>
+                        <li>RU</li>
+                    </ul>
+                </div>
+            </nav>
 
             <!-- NAVBAR END -->
 
