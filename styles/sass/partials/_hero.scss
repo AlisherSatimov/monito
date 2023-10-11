@@ -1,0 +1,375 @@
+#header-hero {
+    .container {
+        width: 1200px;
+        position: relative;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+
+    h1,
+    h2 {
+        color: $primary-color-dark-blue-80;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 68px;
+        text-transform: capitalize;
+        position: relative;
+        z-index: 200;
+    }
+
+    h2 {
+        margin-top: 4px;
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    p {
+        @extend .body16-medium;
+        width: 480px;
+        margin: 24px 0 34px;
+    }
+
+    .hero-btns {
+        display: inline-flex;
+        gap: 20px;
+    }
+
+    img {
+        width: 944px;
+        position: absolute;
+        z-index: 200;
+        top: -60px;
+        right: -90px;
+    }
+}
+
+.effect-t-one {
+    width: 635px;
+    height: 635px;
+    border-radius: 99px;
+    background-color: $secondary-color-mon-yellow;
+    position: absolute;
+    z-index: 100;
+    transform: rotate(25deg);
+
+    top: -250%;
+    left: -370px;
+}
+
+.effect-b-one {
+    width: 635px;
+    height: 635px;
+    border-radius: 99px;
+    background-color: $secondary-color-mon-yellow;
+    position: absolute;
+    z-index: 100;
+    transform: rotate(25deg);
+
+    top: 40%;
+    right: -10px;
+}
+
+.effect-b-two {
+    width: 635px;
+    height: 635px;
+    border-radius: 99px;
+    background-color: $primary-color-dark-blue;
+    position: absolute;
+    z-index: 90;
+    transform: rotate(9deg);
+
+    top: 51%;
+    right: 47px;
+}
+
+.effect-b-three {
+    width: 635px;
+    height: 635px;
+    border-radius: 99px;
+    background-color: $secondary-color-mon-yellow;
+    position: absolute;
+    z-index: 100;
+    transform: rotate(56deg);
+
+    top: 160%;
+    left: -90px;
+}
+
+.effect-c-one {
+    width: 67.103px;
+    height: 67.103px;
+    border-radius: 20px;
+    background: $secondary-color-mon-yellow;
+    position: absolute;
+    z-index: 100;
+    transform: rotate(25.23deg);
+
+    top: -5px;
+    left: -5px;
+}
+
+.effect-c-two {
+    width: 21.471px;
+    height: 21.471px;
+    border-radius: 6px;
+    background: $primary-color-dark-blue;
+    position: absolute;
+    z-index: 100;
+    transform: rotate(43deg);
+
+    top: 40px;
+    left: 600px;
+}
+
+.effect-c-three {
+    width: 21.471px;
+    height: 21.471px;
+    border-radius: 6px;
+    background: $secondary-color-mon-yellow;
+    position: absolute;
+    z-index: 90;
+    transform: rotate(23deg);
+
+    top: 30px;
+    left: 605px;
+}
+
+.effect-c-four {
+    width: 14.626px;
+    height: 14.626px;
+    border-radius: 4px;
+    background: $secondary-color-mon-yellow;
+    position: absolute;
+    z-index: 90;
+    transform: rotate(20deg);
+
+    top: -20px;
+    left: 625px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #header-hero {
+        .container {
+            width: 382px;
+        }
+    }
+
+    .hero {
+        width: 382px;
+        margin-top: 0;
+
+        p {
+            margin-top: 0;
+            margin: 12px 0 32px;
+        }
+
+        h1 {
+            font-size: 46px;
+            line-height: 60px;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 38px;
+        }
+
+        img {
+            max-width: 614px;
+            width: 614px;
+            top: 105%;
+            right: -70px;
+        }
+    }
+
+    .effect-t-one {
+        transform: rotate(25deg);
+
+        top: -260%;
+        left: -390px;
+    }
+
+    .effect-b-one {
+        width: 528.983px;
+        height: 528.983px;
+        border-radius: 48px;
+
+        background-color: $secondary-color-mon-yellow;
+        z-index: 100;
+        transform: rotate(25deg);
+
+        top: 140%;
+        right: -90px;
+    }
+
+    .effect-b-two {
+        width: 528.983px;
+        height: 528.983px;
+        border-radius: 48px;
+
+        background-color: $primary-color-dark-blue;
+        z-index: 90;
+        transform: rotate(5deg);
+
+        top: 150%;
+        right: -60px;
+    }
+
+    .effect-b-three {
+        display: none;
+    }
+    .effect-c-one {
+        display: none;
+    }
+
+    .effect-c-two {
+        width: 12.437px;
+        height: 12.437px;
+        transform: rotate(30deg);
+
+        top: 70px;
+        left: -25px;
+    }
+
+    .effect-c-three {
+        width: 15.928px;
+        height: 15.928px;
+        transform: rotate(-9deg);
+
+        top: 65px;
+        left: -25px;
+    }
+
+    .effect-c-four {
+        width: 14.626px;
+        height: 14.626px;
+        transform: rotate(20deg);
+
+        top: 40px;
+        left: 100px;
+    }
+}
+
+@media only screen and (max-width: 754px) {
+    #header-hero {
+        .container {
+            width: 404px;
+            padding: 0 16px;
+        }
+    }
+    .hero {
+        width: 404px;
+        margin-top: 35px;
+
+        p {
+            width: 382px;
+            margin-top: 0;
+            margin: 12px 0 32px;
+        }
+
+        h1 {
+            font-size: 46px;
+            line-height: 60px;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+
+    .effect-t-one {
+        transform: rotate(19deg);
+        border-radius: 61px;
+
+        top: -245%;
+        left: -270px;
+    }
+
+    .effect-b-one {
+        top: 140%;
+        right: -180px;
+    }
+
+    .effect-b-two {
+        top: 150%;
+        right: -150px;
+    }
+
+    .effect-c-two {
+        border-radius: 4px;
+        left: auto;
+        top: 77px;
+        right: 90px;
+    }
+
+    .effect-c-three {
+        border-radius: 4px;
+        left: auto;
+        top: 70px;
+        right: 85px;
+    }
+
+    .effect-c-four {
+        border-radius: 4px;
+        left: auto;
+        top: 40px;
+        right: 40px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #header-hero {
+        .container {
+            width: 280px;
+            padding: 0 16px;
+        }
+    }
+
+    .hero {
+        width: 270px;
+        gap: 10px;
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 38px;
+        }
+
+        p {
+            width: 270px;
+            margin: 0;
+        }
+
+        .hero-btns {
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        img {
+            top: 100%;
+            right: -130px;
+        }
+    }
+
+    .effect-t-one {
+        transform: rotate(19deg);
+        border-radius: 61px;
+
+        top: -210%;
+        left: -300px;
+    }
+}

@@ -1,5 +1,11 @@
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1200px) {
     .container {
-        width: 734px;
+        width: 578px;
+    }
+}
+
+@media only screen and (max-width: 754px) {
+    .container {
+        width: 414px;
     }
 }
