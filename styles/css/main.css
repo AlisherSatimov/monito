@@ -1396,4 +1396,42 @@ body {
   #our-products {
     display: none;
   }
+}
+#partrners {
+  padding: 40px 0;
+  margin-top: 60px;
+}
+#partrners .site-partners {
+  display: flex;
+  flex-direction: column;
+}
+#partrners .site-partners__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#partrners .title-content {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+#partrners .our-partners {
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 112px;
+  gap: 20px;
+}
+#partrners .our-partners img {
+  display: inline-block;
+  width: 114px;
+  height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  #partrners {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

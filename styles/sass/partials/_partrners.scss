@@ -1,0 +1,42 @@
+#partrners {
+    padding: 40px 0;
+    margin-top: 60px;
+    .site-partners {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site-partners__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title-content {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .our-partners {
+        // width: 100%;
+        margin-top: 15px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 112px;
+        gap: 20px;
+
+        img {
+            display: inline-block;
+            width: 114px;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #partrners {
+        display: none;
+    }
+}
