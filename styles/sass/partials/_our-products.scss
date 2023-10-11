@@ -1,0 +1,88 @@
+#our-products {
+    .site-our-products {
+        margin-top: 60px;
+    }
+
+    .our-products__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
+    }
+
+    .our-products-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .our-product-card {
+        display: flex;
+        padding: 8px 8px 0px 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        border-radius: 12px;
+        background: $neutral-color-00;
+        box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+    }
+
+    img {
+        width: 265px;
+    }
+
+    .product-status {
+        display: flex;
+        padding: 8px 8px 20px 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .body16-bold {
+        color: $neutral-color-100;
+    }
+
+    .body12-medium {
+        display: flex;
+        gap: 6px;
+
+        span {
+            @extend .body12-bold;
+        }
+    }
+
+    .free-gift {
+        width: 244px;
+        display: flex;
+        padding: 6px 10px 4px 10px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: $secondary-color-mon-yellow-40;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        span {
+            font-size: 24px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #our-products {
+        .our-products-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 754px) {
+    #our-products {
+        display: none;
+    }
+}
