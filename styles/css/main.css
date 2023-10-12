@@ -1512,4 +1512,86 @@ body {
   #adoption {
     display: none;
   }
+}
+#useful-pet-knowledge {
+  margin-top: 60px;
+}
+#useful-pet-knowledge .bottom-btn {
+  display: none;
+  width: 100%;
+}
+#useful-pet-knowledge .site-useful__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+#useful-pet-knowledge .useful-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+#useful-pet-knowledge .useful-card {
+  display: inline-flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+}
+#useful-pet-knowledge .useful-card img {
+  width: 400px;
+}
+#useful-pet-knowledge .body10-bold {
+  display: inline-flex;
+  padding: 2px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 28px;
+  background: #00a7e7;
+}
+#useful-pet-knowledge .useful-card-info {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #useful-pet-knowledge .useful-cards {
+    grid-template-columns: 1fr;
+  }
+  #useful-pet-knowledge .useful-card {
+    width: 400px;
+    margin: 0 auto;
+  }
+  #useful-pet-knowledge .useful-card:nth-child(2),
+  #useful-pet-knowledge .useful-card:nth-child(3) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 754px) {
+  #useful-pet-knowledge .useful-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 12px;
+  }
+  #useful-pet-knowledge .useful-card:nth-child(2),
+  #useful-pet-knowledge .useful-card:nth-child(3) {
+    display: inline-flex;
+  }
+  #useful-pet-knowledge .useful-card {
+    width: 100%;
+  }
+  #useful-pet-knowledge .top-btn {
+    display: none;
+  }
+  #useful-pet-knowledge .bottom-btn {
+    margin-top: 20px;
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */
