@@ -5,14 +5,16 @@
     left: 0;
     width: 100%;
     height: 100vh;
+
     background: rgb(255, 255, 255);
     background: linear-gradient(
-        146deg,
+        148deg,
         rgba(255, 255, 255, 1) 0%,
-        rgba(138, 177, 193, 1) 25%,
-        rgba(41, 63, 99, 1) 69%,
-        rgba(0, 0, 0, 1) 100%
+        rgba(0, 167, 231, 1) 25%,
+        rgba(247, 219, 167, 1) 59%,
+        rgba(0, 52, 89, 1) 92%
     );
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +47,7 @@
 }
 
 .circle1 {
-    border: 3px solid #bcc33a;
+    border: 3px solid $secondary-color-mon-yellow;
     border-top-color: transparent;
     border-right-color: transparent;
     width: 50px;

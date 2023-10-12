@@ -77,6 +77,10 @@
 
         font-size: 22px;
 
+        i {
+            transition: 0.3s;
+        }
+
         i:hover {
             color: $state-color-blue-sea;
         }
