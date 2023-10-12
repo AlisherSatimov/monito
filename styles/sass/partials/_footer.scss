@@ -1,0 +1,205 @@
+#footer {
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 40px 40px 0px 0px;
+    background: $linear;
+
+    .site-footer {
+        padding: 80px 0 40px;
+    }
+
+    .registr-form {
+        display: flex;
+        padding: 32px;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 16px;
+        background: $primary-color-dark-blue;
+    }
+
+    .enter-mail-box {
+        display: flex;
+        width: 707px;
+        padding: 12px;
+        align-items: center;
+        gap: 12px;
+        border-radius: 14px;
+        background: $light;
+    }
+    input {
+        width: 510px;
+        padding: 14px 28px;
+        border-radius: 8px;
+        border: 1px solid $neutral-color-40;
+        background: #fff;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: var(--neutral-color-40, #99a2a5);
+
+            @extend .body14-medium;
+        }
+    }
+
+    label {
+        width: 389px;
+        color: $neutral-color-00;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: capitalize;
+    }
+
+    .footer-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0;
+
+        border-bottom: 1px solid $neutral-color-20;
+    }
+
+    .footer-links {
+        @extend .body16-medium;
+
+        display: flex;
+        gap: 60px;
+        color: $neutral-color-100;
+    }
+
+    .socials {
+        display: flex;
+        gap: 40px;
+
+        font-size: 22px;
+
+        i:hover {
+            color: $state-color-blue-sea;
+        }
+    }
+
+    .extra-info {
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .all-right-reserved,
+    .terms-privacy li {
+        @extend .body14-medium;
+        color: $neutral-color-60;
+    }
+
+    .terms-privacy {
+        display: flex;
+        gap: 35px;
+    }
+    .second-all {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #footer {
+        .site-footer {
+            padding: 40px 0 16px;
+        }
+        .registr-form {
+            padding: 32px 16px;
+            align-items: flex-start;
+            gap: 16px;
+            flex-direction: column;
+        }
+
+        label {
+            width: 100%;
+
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .enter-mail-box {
+            width: 100%;
+            padding: 12px;
+            gap: 16px;
+        }
+
+        input {
+            width: 50%;
+        }
+
+        .subscribe-btn {
+            width: 50%;
+        }
+
+        .footer-items {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .footer-links {
+            gap: 114px;
+        }
+
+        .first-all {
+            display: none;
+        }
+
+        .second-all {
+            display: inline-block;
+        }
+
+        .terms-privacy {
+            gap: 12px;
+        }
+
+        .all-right-reserved {
+            color: $neutral-color-60;
+
+            /* Body/10px Regular */
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+        }
+
+        .extra-info {
+            padding-top: 26px;
+            gap: 8px;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 754px) {
+    #footer {
+        .enter-mail-box {
+            gap: 12px;
+            flex-direction: column;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .subscribe-btn {
+            width: 100%;
+        }
+
+        .footer-links {
+            width: 100%;
+            gap: 0;
+            justify-content: space-between;
+        }
+    }
+}
